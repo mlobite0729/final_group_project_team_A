@@ -30,9 +30,7 @@ const ApexAthletics = () => {
           <h1>Cialdini’s 6 Principles of Persuasion:</h1>
         </header>
 
-        {/* Rest of the content */}
-
-        <footer className={styles.footer}>
+         <footer className={styles.footer}>
           <div className={styles.container}>
             <div className={styles.row}>
               <div className={styles['footer-col']}>
