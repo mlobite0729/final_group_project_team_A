@@ -83,9 +83,19 @@
   height: 1em;
 }
 
+/* styles.module.css */
+
+.header {
+  background-color: #ffffff;
+  /* Other styles */
+}
+
+
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
 }
+
