@@ -1,8 +1,12 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import React from 'react';
+import Link from 'next/link';
+
 
 export default function Home() {
   return (
+    
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -17,13 +21,24 @@ export default function Home() {
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
         </p>
+        
+        <div>
+      <Link href="/marketing_strategy">
+        View Marketing Strategy
+      </Link>
+    </div>
+    <div>
+      <Link href="/privacy_policy">
+        View Privacy Policy
+      </Link>
+    </div>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
-
+          
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h3>Learn &rarr;</h3>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
