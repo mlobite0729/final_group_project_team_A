@@ -37,6 +37,11 @@ export default function Home() {
         View Buyer's Persona
       </Link>
     </div>
+    <div>
+      <Link href="/brand_guide">
+        View Brand Guide
+      </Link>
+    </div>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
