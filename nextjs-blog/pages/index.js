@@ -14,6 +14,9 @@ const Home = () => {
             <li><Link href="/brand_guide">Brand Guide</Link></li>
             <li><Link href="/marketing_strategy">Marketing Strategy</Link></li>
             <li><Link href="/buyers_persona">Buyer's Persona</Link></li>
+            <li><Link href="/privacy_policy">Privacy Policy</Link></li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/blog">Blog</Link></li>
           </ul>
         </nav>
       </header>

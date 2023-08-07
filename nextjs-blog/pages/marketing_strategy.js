@@ -17,6 +17,21 @@ const ApexAthletics = () => {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         />
       </Head>
+      <header>
+        <img src="images/Apex_Athletics_logo.png" alt="Logo" className="logo" />
+        <nav>
+          <ul>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/brand_guide">Brand Guide</Link></li>
+            <li><Link href="/marketing_strategy">Marketing Strategy</Link></li>
+            <li><Link href="/buyers_persona">Buyer's Persona</Link></li>
+            <li><Link href="/privacy_policy">Privacy Policy</Link></li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/blog">Blog</Link></li>
+          </ul>
+        </nav>
+      </header>
+
       <div className={styles['main-body']}>
         <header className={styles.header}>
           <img src="" alt="Logo" className={styles.logo} />
