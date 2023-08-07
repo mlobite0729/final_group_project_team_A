@@ -32,6 +32,11 @@ export default function Home() {
         View Privacy Policy
       </Link>
     </div>
+    <div>
+      <Link href="/buyers_persona">
+        View Buyer's Persona
+      </Link>
+    </div>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
