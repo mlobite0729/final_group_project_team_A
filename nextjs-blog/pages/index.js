@@ -1,140 +1,122 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import React from 'react';
 import Link from 'next/link';
+/*import styles from '../styles/Home.module.css';*/
+import React from 'react';
 
-
-export default function Home() {
+const Home = () => {
   return (
-    
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-        
-        <div>
-      <Link href="/marketing_strategy">
-        View Marketing Strategy
-      </Link>
-    </div>
     <div>
-      <Link href="/privacy_policy">
-        View Privacy Policy
-      </Link>
-    </div>
-    <div>
-      <Link href="/buyers_persona">
-        View Buyer's Persona
-      </Link>
-    </div>
-    <div>
-      <Link href="/brand_guide">
-        View Brand Guide
-      </Link>
-    </div>
+      <header>
+        <img src="images/Apex_Athletics_logo.png" alt="Logo" className="logo" />
+        <nav>
+          <ul>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/brand_guide">Brand Guide</Link></li>
+            <li><Link href="/marketing_strategy">Marketing Strategy</Link></li>
+            <li><Link href="/buyers_persona">Buyer's Persona</Link></li>
+          </ul>
+        </nav>
+      </header>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-          
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div className="hero">
+        <div className="hero-content">
+          <h1 className="hero-heading">Welcome to Apex Athletics Gym</h1>
+          <p className="hero-subheading">Unlock your full athletic potential</p>
+          <button className="hero-button">Get Started</button>
         </div>
-      </main>
+      </div>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
+      <iframe
+        width="100%"
+        height="600"
+        src="https://www.youtube.com/embed/l8QR-jfv8Os"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
+
+      <div className="about">
+        <div className="container">
+          <h2>About Us</h2>
+          <p>
+            Apex Athletics Gym is a state-of-the-art fitness facility dedicated to helping individuals achieve their fitness goals. With a team of experienced trainers and a wide range of equipment, we provide a supportive environment for all fitness levels.
+          </p>
+        </div>
+      </div>
+      
+      
+
+      <div className="services">
+        <div className="container">
+          <h2>Our Services</h2>
+          <div className="service">
+            <h3>Personal Training</h3>
+            <p>Our certified personal trainers will create a customized workout plan tailored to your specific needs and help you reach your fitness goals faster.</p>
+          </div>
+          <div className="service">
+            <h3>Group Classes</h3>
+            <p>Join our high-energy group classes led by experienced instructors. From cardio and strength training to yoga and pilates, we offer a variety of classes to keep you motivated.</p>
+          </div>
+          <div className="service">
+            <h3>Nutrition Guidance</h3>
+            <p>Our nutrition experts will provide guidance on healthy eating habits and create personalized meal plans to complement your fitness routine.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="contact">
+        <div className="container">
+          <h2>Contact Us</h2>
+          <p>Ready to take the next step in your fitness journey? Contact us today to schedule a consultation or ask any questions you may have.</p>
+          <button className="contact-button">Get in Touch</button>
+        </div>
+      </div>
+
+      <footer className="footer">
+        <div className="container">
+          <div className="row">
+            <div className="footer-col">
+              <h4>company</h4>
+              <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/buyers_persona">Buyer's Persona</a></li>
+                <li><a href="/marketing_strategy">Marketing Strategy</a></li>
+                <li><a href="/brand_guide">Brand Guide</a></li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>online shop</h4>
+              <ul>
+                <li><a href="#">Apparel</a></li>
+                <li><a href="#">Bag</a></li>
+                <li><a href="#">Shoes</a></li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>follow us</h4>
+              <div className="social-links">
+                <a href="#"><i className="fab fa-facebook-f"></i></a>
+                <a href="#"><i className="fab fa-twitter"></i></a>
+                <a href="#"><i className="fab fa-instagram"></i></a>
+                <a href="#"><i className="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
     </div>
-  )
-}
+  );
+};
+
+export default Home;
