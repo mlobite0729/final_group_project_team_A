@@ -1,31 +1,47 @@
 import Head from 'next/head';
 import Link from 'next/link';
-/*import styles from '../styles/Home.module.css';*/
 import React from 'react';
+import styles from '../styles/Home.module.css';
 
 const Home = () => {
   return (
     <div>
+      <Head>
+        <meta charSet="UTF-8" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Apex Athletics Home</title>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        />
+        <style>
+          {`
+            body {
+              background-color: #1197A9;
+            }
+          `}
+        </style>
+      </Head> 
       <header>
-        <img src="images/Apex_Athletics_logo.png" alt="Logo" className="logo" />
+        <img src="/Apex_Athletics_logo.png" alt="Logo" className={styles.logo} />
         <nav>
-          <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/brand_guide">Brand Guide</Link></li>
-            <li><Link href="/marketing_strategy">Marketing Strategy</Link></li>
-            <li><Link href="/buyers_persona">Buyer's Persona</Link></li>
-            <li><Link href="/privacy_policy">Privacy Policy</Link></li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
+          <ul className={styles.nav_ul}>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/">Home</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/brand_guide">Brand Guide</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/marketing_strategy">Marketing Strategy</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/buyers_persona">Buyer's Persona</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/privacy_policy">Privacy Policy</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/about">About</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/blog">Blog</Link></li>
           </ul>
         </nav>
       </header>
 
-      <div className="hero">
-        <div className="hero-content">
-          <h1 className="hero-heading">Welcome to Apex Athletics Gym</h1>
-          <p className="hero-subheading">Unlock your full athletic potential</p>
-          <button className="hero-button">Get Started</button>
+      <div className={styles.hero}>
+        <div className={styles.hero_content}>
+          <h1 className={styles.hero_heading}>Welcome to Apex Athletics Gym</h1>
+          <p className={styles.hero_subheading}>Unlock your full athletic potential</p>
+          <button className={styles.hero_button}>Get Started</button>
         </div>
       </div>
 
@@ -39,8 +55,8 @@ const Home = () => {
         allowFullScreen
       ></iframe>
 
-      <div className="about">
-        <div className="container">
+      <div className={styles.about}>
+        <div className={styles.container}>
           <h2>About Us</h2>
           <p>
             Apex Athletics Gym is a state-of-the-art fitness facility dedicated to helping individuals achieve their fitness goals. With a team of experienced trainers and a wide range of equipment, we provide a supportive environment for all fitness levels.
@@ -50,36 +66,36 @@ const Home = () => {
       
       
 
-      <div className="services">
-        <div className="container">
+      <div className={styles.services}>
+        <div className={styles.container}>
           <h2>Our Services</h2>
-          <div className="service">
+          <div className={styles.service}>
             <h3>Personal Training</h3>
             <p>Our certified personal trainers will create a customized workout plan tailored to your specific needs and help you reach your fitness goals faster.</p>
           </div>
-          <div className="service">
+          <div className={styles.service}>
             <h3>Group Classes</h3>
             <p>Join our high-energy group classes led by experienced instructors. From cardio and strength training to yoga and pilates, we offer a variety of classes to keep you motivated.</p>
           </div>
-          <div className="service">
+          <div className={styles.service}>
             <h3>Nutrition Guidance</h3>
             <p>Our nutrition experts will provide guidance on healthy eating habits and create personalized meal plans to complement your fitness routine.</p>
           </div>
         </div>
       </div>
 
-      <div className="contact">
-        <div className="container">
+      <div className={styles.contact}>
+        <div className={styles.container}>
           <h2>Contact Us</h2>
           <p>Ready to take the next step in your fitness journey? Contact us today to schedule a consultation or ask any questions you may have.</p>
-          <button className="contact-button">Get in Touch</button>
+          <button className={styles.contact_button}>Get in Touch</button>
         </div>
       </div>
 
-      <footer className="footer">
-        <div className="container">
-          <div className="row">
-            <div className="footer-col">
+      <footer className={styles.footer}>
+        <div className={styles.container_footer}>
+          <div className={styles.row}>
+            <div className={styles.footer_col}>
               <h4>company</h4>
               <ul>
                 <li><a href="/">home</a></li>
@@ -88,7 +104,7 @@ const Home = () => {
                 <li><a href="/brand_guide">Brand Guide</a></li>
               </ul>
             </div>
-            <div className="footer-col">
+            <div className={styles.footer_col}>
               <h4>get help</h4>
               <ul>
                 <li><a href="#">FAQ</a></li>
@@ -98,7 +114,7 @@ const Home = () => {
                 <li><a href="#">payment options</a></li>
               </ul>
             </div>
-            <div className="footer-col">
+            <div className={styles.footer_col}>
               <h4>online shop</h4>
               <ul>
                 <li><a href="#">Apparel</a></li>
@@ -106,9 +122,9 @@ const Home = () => {
                 <li><a href="#">Shoes</a></li>
               </ul>
             </div>
-            <div className="footer-col">
+            <div className={styles.footer_col}>
               <h4>follow us</h4>
-              <div className="social-links">
+              <div className={styles.social_links}>
                 <a href="#"><i className="fab fa-facebook-f"></i></a>
                 <a href="#"><i className="fab fa-twitter"></i></a>
                 <a href="#"><i className="fab fa-instagram"></i></a>

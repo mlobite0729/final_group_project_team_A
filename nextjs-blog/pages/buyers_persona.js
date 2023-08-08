@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../styles/BuyersPersona.module.css';
+import styles from '../styles/Buyers_Persona.module.css';
 import Link from 'next/link';
 import React from 'react';
 

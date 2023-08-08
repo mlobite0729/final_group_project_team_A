@@ -11,7 +11,7 @@ body{
 }
 .container{
   max-width: 1170px;
-  margin:auto;
+  margin: auto;
 }
 .row{
   display: flex;
