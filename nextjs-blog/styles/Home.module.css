@@ -354,3 +354,19 @@ object-fit: fill;
     width: 100%;
 }
 }
+
+/* styles.module.css */
+.main_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.section {
+  max-width: 800px;
+  text-align: center;
+  color: black; /* Text color set to black */
+}
