@@ -23,26 +23,36 @@ const PrivacyPolicyPage = () => {
 
   return (
     <>
-     <header>
-        <img src="images/Apex_Athletics_logo.png" alt="Logo" className="logo" />
+     <Head>
+        <meta charSet="UTF-8" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Apex Athletics Privacy Policy</title>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        />
+        <style>
+          {`
+            body {
+              background-color: #1197A9;
+            }
+          `}
+        </style>
+      </Head> 
+      <header>
+        <img src="/Apex_Athletics_logo.png" alt="Logo" className={styles.logo} />
         <nav>
-          <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/brand_guide">Brand Guide</Link></li>
-            <li><Link href="/marketing_strategy">Marketing Strategy</Link></li>
-            <li><Link href="/buyers_persona">Buyer's Persona</Link></li>
-            <li><Link href="/privacy_policy">Privacy Policy</Link></li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
+          <ul className={styles.nav_ul}>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/">Home</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/brand_guide">Brand Guide</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/marketing_strategy">Marketing Strategy</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/buyers_persona">Buyer's Persona</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/privacy_policy">Privacy Policy</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/about">About</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/blog">Blog</Link></li>
           </ul>
         </nav>
       </header>
-      <Head>
-      <meta charSet="UTF-8" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Privacy Policy - Apex Athletics</title>
-      </Head>
       <div style={pageStyle}>
         <div style={contentStyle}>
           <h1>Privacy Policy</h1>
@@ -91,10 +101,10 @@ const PrivacyPolicyPage = () => {
         </div>
       </div>
 
-      <footer className="footer">
-      
-          
-            <div className="footer-col">
+      <footer className={styles.footer}>
+        <div className={styles.container_footer}>
+          <div className={styles.row}>
+            <div className={styles.footer_col}>
               <h4>company</h4>
               <ul>
                 <li><a href="/">home</a></li>
@@ -103,7 +113,7 @@ const PrivacyPolicyPage = () => {
                 <li><a href="/brand_guide">Brand Guide</a></li>
               </ul>
             </div>
-            <div className="footer-col">
+            <div className={styles.footer_col}>
               <h4>get help</h4>
               <ul>
                 <li><a href="#">FAQ</a></li>
@@ -113,7 +123,7 @@ const PrivacyPolicyPage = () => {
                 <li><a href="#">payment options</a></li>
               </ul>
             </div>
-            <div className="footer-col">
+            <div className={styles.footer_col}>
               <h4>online shop</h4>
               <ul>
                 <li><a href="#">Apparel</a></li>
@@ -121,17 +131,17 @@ const PrivacyPolicyPage = () => {
                 <li><a href="#">Shoes</a></li>
               </ul>
             </div>
-            <div className="footer-col">
+            <div className={styles.footer_col}>
               <h4>follow us</h4>
-              <div className="social-links">
+              <div className={styles.social_links}>
                 <a href="#"><i className="fab fa-facebook-f"></i></a>
                 <a href="#"><i className="fab fa-twitter"></i></a>
                 <a href="#"><i className="fab fa-instagram"></i></a>
                 <a href="#"><i className="fab fa-linkedin-in"></i></a>
               </div>
             </div>
-          
-        
+          </div>
+        </div>
       </footer>
 
     </>
