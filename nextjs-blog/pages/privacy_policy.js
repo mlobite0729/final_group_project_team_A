@@ -2,16 +2,28 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
+
 const PrivacyPolicyPage = () => {
+  const pageStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center', // Center horizontally
+    justifyContent: 'center', // Center vertically
+    minHeight: '100vh', // Ensure the content takes the full viewport height
+    padding: '20px',
+  };
+
+  const contentStyle = {
+    maxWidth: '800px',
+    textAlign: 'center',
+    color: 'Black', // Text color set to red
+  };
+
+
+
   return (
     <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Privacy Policy - Apex Athletics</title>
-      </Head>
-      <header>
+     <header>
         <img src="images/Apex_Athletics_logo.png" alt="Logo" className="logo" />
         <nav>
           <ul>
@@ -25,10 +37,14 @@ const PrivacyPolicyPage = () => {
           </ul>
         </nav>
       </header>
-
-      <div className={styles['main-body']}>
-        
-        <div className={styles['content-container']}>
+      <Head>
+      <meta charSet="UTF-8" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Privacy Policy - Apex Athletics</title>
+      </Head>
+      <div style={pageStyle}>
+        <div style={contentStyle}>
           <h1>Privacy Policy</h1>
           <p>
             At Apex Athletics, we are committed to protecting your privacy and ensuring the security
@@ -44,7 +60,7 @@ const PrivacyPolicyPage = () => {
           </p>
           <p>
             If you choose to provide us with personal information, such as your name, email address,
-            or phone number, we will use this information to respond to your inquiries, process your
+            we will use this information to respond to your inquiries, process your
             orders, and improve our services. We do not sell, rent, or share your personal information
             with third parties for marketing purposes.
           </p>
@@ -74,8 +90,52 @@ const PrivacyPolicyPage = () => {
           </p>
         </div>
       </div>
-      {/* Footer content */}
+
+      <footer className="footer">
+      
+          
+            <div className="footer-col">
+              <h4>company</h4>
+              <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/buyers_persona">Buyer's Persona</a></li>
+                <li><a href="/marketing_strategy">Marketing Strategy</a></li>
+                <li><a href="/brand_guide">Brand Guide</a></li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>online shop</h4>
+              <ul>
+                <li><a href="#">Apparel</a></li>
+                <li><a href="#">Bag</a></li>
+                <li><a href="#">Shoes</a></li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>follow us</h4>
+              <div className="social-links">
+                <a href="#"><i className="fab fa-facebook-f"></i></a>
+                <a href="#"><i className="fab fa-twitter"></i></a>
+                <a href="#"><i className="fab fa-instagram"></i></a>
+                <a href="#"><i className="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          
+        
+      </footer>
+
     </>
+    
   );
 };
 
