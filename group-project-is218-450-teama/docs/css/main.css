@@ -1,0 +1,157 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(275.03deg, #ABD9D9 -11.32%, #8D8DDA 114.47%);
+  }
+
+  h1, p {
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-image: url('../images/home_page.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(245, 95, 8);
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero-heading {
+    font-size: 60px;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 4px #FF0000;
+  }
+  
+  .hero-subheading {
+    font-size: 36px;
+    margin-top: 80%;
+    text-shadow: 2px 2px 4px #FF0000;
+  }
+  
+  .hero-button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .hero-button:hover {
+    background-color: #e63c00;
+  }
+  
+  /* About section styles */
+  .about {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Services section styles */
+  .services {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .service {
+    margin-bottom: 30px;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  /* Contact section styles */
+  .contact {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .contact-button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-button:hover {
+    background-color: #e63c00;
+  }
+  
+  /*Styling for navigation menu */
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav ul li {
+  float: right;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.main-content {
+  text-align: center;
+  font-size: 20px;
+}
+
+.messages {
+  text-align: center;
+}
+
+.brand-logo {
+  text-align: center;
+}
+
+video {
+  display: block;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 75px;
+  height: 75px;
+  object-fit: fill;
+}
