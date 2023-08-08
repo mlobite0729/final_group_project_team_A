@@ -31,7 +31,6 @@ test('navigates to home page', async ({ page }) => {
 test('navigates to Marketing Startegy', async ({ page }) => {
   await page.goto('https://final-group-project-team-a-5761.vercel.app/'); // Replace with your actual local development server URL
 
-  // Click the "Brand Guide" link.
   await page.click('a[href="/marketing_strategy"]');
 
   // Expects the URL to contain "brand_guide".
