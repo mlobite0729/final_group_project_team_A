@@ -1,26 +1,59 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import React from 'react';
+import styles from '../styles/Home.module.css';
 
 const Blog = () => {
+
+  const articleContainerStyle = {
+    display: 'grid',
+    gap: '30px',
+    margin: '20px auto',
+    maxWidth: '800px',
+    padding: '20px',
+    backgroundColor: 'white',
+    borderRadius: '8px',
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+  };
+
+  const articleStyle = {
+    textAlign: 'left',
+  };
   return (
     <div>
+      <Head>
+        <meta charSet="UTF-8" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Apex Athletics Privacy Policy</title>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        />
+        <style>
+          {`
+            body {
+              background-color: #1197A9;
+            }
+          `}
+        </style>
+      </Head>
       <header>
-        <img src="images/Apex_Athletics_logo.png" alt="Logo" className="logo" />
+      <img src="/Apex_Athletics_logo.png" alt="Logo" className={styles.logo} />
         <nav>
-          <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/brand_guide">Brand Guide</Link></li>
-            <li><Link href="/marketing_strategy">Marketing Strategy</Link></li>
-            <li><Link href="/buyers_persona">Buyer's Persona</Link></li>
-            <li><Link href="/privacy_policy">Privacy Policy</Link></li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/blog">Blog</Link></li> {/* Keep Blog link */}
+          <ul className={styles.nav_ul}>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/">Home</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/brand_guide">Brand Guide</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/marketing_strategy">Marketing Strategy</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/buyers_persona">Buyer's Persona</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/privacy_policy">Privacy Policy</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/about">About</Link></li>
+            <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/blog">Blog</Link></li>
           </ul>
         </nav>
       </header>
 
-      <article>
+      <div style={articleContainerStyle}>
+      <article style={articleStyle}>
         <h2>Stay Fit, Stay Healthy</h2>
         <p>Regular exercise is essential for maintaining a healthy lifestyle. At our gym, we provide a variety of workout options that cater to different fitness goals and levels. Whether you're aiming to lose weight, build muscle, or simply improve your overall well-being, our experienced trainers and state-of-the-art equipment are here to help you achieve your goals.</p>
         
@@ -33,8 +66,10 @@ const Blog = () => {
         <h2>Join Us Today</h2>
         <p>Ready to experience the numerous benefits of regular exercise? Join our gym community today and embark on a journey towards better health and fitness. Our team is dedicated to helping you achieve your goals, whether you're a seasoned fitness enthusiast or just getting started.</p>
       </article>
-
-      <article>
+      </div>
+      
+      <div style={articleContainerStyle}>
+      <article style={articleStyle}>
         <h2>1. HIIT Workouts</h2>
         <p>High-Intensity Interval Training (HIIT) is a popular class that combines short bursts of intense exercises with brief recovery periods. This class is perfect for burning calories, improving cardiovascular fitness, and increasing metabolism.</p>
         
@@ -53,8 +88,10 @@ const Blog = () => {
         <h2>Enroll Today</h2>
         <p>Ready to take your fitness journey to the next level? Enroll in our exciting fitness classes and enjoy a variety of workouts that suit your interests and fitness goals.</p>
         </article>
+      </div>
 
-        <article>
+      <div style={articleContainerStyle}>
+      <article style={articleStyle}>
         <h2>Pre-Workout Fuel</h2>
         <p>Before hitting the gym, it's important to have a balanced meal or snack that provides you with sustained energy. Opt for complex carbohydrates like whole grains, lean protein, and healthy fats to power through your workout and prevent energy crashes.</p>
         
@@ -73,47 +110,48 @@ const Blog = () => {
         <h2>Final Thoughts</h2>
         <p>Enhance your gym experience by complementing your workouts with proper nutrition. A well-balanced diet can improve your performance, aid in recovery, and contribute to your overall health and fitness goals.</p>
     </article>
-
-      <footer className="footer">
-      <div class="container">
-         <div class="row">
-           <div class="footer-col">
-             <h4>company</h4>
-             <ul>
-               <li><a href="index.html">home</a></li>
-               <li><a href="buyers_persona.html">Buyer's Persona</a></li>
-               <li><a href="marketing_strategy.html">Marketing Strategy</a></li>
-               <li><a href="brand_guide.html">Brand Guide</a></li>
-             </ul>
-           </div>
-           <div class="footer-col">
-             <h4>get help</h4>
-             <ul>
-               <li><a href="#">FAQ</a></li>
-               <li><a href="#">shipping</a></li>
-               <li><a href="#">returns</a></li>
-               <li><a href="#">order status</a></li>
-               <li><a href="#">payment options</a></li>
-             </ul>
-           </div>
-           <div class="footer-col">
-             <h4>online shop</h4>
-             <ul>
-               <li><a href="#">Apparel</a></li>
-               <li><a href="#">Bag</a></li>
-               <li><a href="#">Shoes</a></li>
-             </ul>
-           </div>
-           <div class="footer-col">
-             <h4>follow us</h4>
-             <div class="social-links">
-               <a href="#"><i class="fab fa-facebook-f"></i></a>
-               <a href="#"><i class="fab fa-twitter"></i></a>
-               <a href="#"><i class="fab fa-instagram"></i></a>
-               <a href="#"><i class="fab fa-linkedin-in"></i></a>
-             </div>
-           </div>
-         </div>
+      </div>
+      
+    <footer className={styles.footer}>
+        <div className={styles.container_footer}>
+          <div className={styles.row}>
+            <div className={styles.footer_col}>
+              <h4>company</h4>
+              <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/buyers_persona">Buyer's Persona</a></li>
+                <li><a href="/marketing_strategy">Marketing Strategy</a></li>
+                <li><a href="/brand_guide">Brand Guide</a></li>
+              </ul>
+            </div>
+            <div className={styles.footer_col}>
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div className={styles.footer_col}>
+              <h4>online shop</h4>
+              <ul>
+                <li><a href="#">Apparel</a></li>
+                <li><a href="#">Bag</a></li>
+                <li><a href="#">Shoes</a></li>
+              </ul>
+            </div>
+            <div className={styles.footer_col}>
+              <h4>follow us</h4>
+              <div className={styles.social_links}>
+                <a href="#"><i className="fab fa-facebook-f"></i></a>
+                <a href="#"><i className="fab fa-twitter"></i></a>
+                <a href="#"><i className="fab fa-instagram"></i></a>
+                <a href="#"><i className="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
