@@ -101,7 +101,7 @@
 
 /* Hero section styles */
 .hero {
-  background-image: url('../../group-project-is218-450-teama/docs/images/home_page.png');
+  background-image: url('/final_group_project_team_A/nextjs-blog/public/images/home_page.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
