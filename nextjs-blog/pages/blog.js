@@ -25,7 +25,7 @@ const Blog = () => {
         <meta charSet="UTF-8" />
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Apex Athletics Privacy Policy</title>
+        <title>Apex Athletics Blog</title>
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         />
@@ -38,7 +38,7 @@ const Blog = () => {
         </style>
       </Head>
       <header>
-      <img src="/Apex_Athletics_logo.png" alt="Logo" className={styles.logo} />
+      <img src="/images/Apex_Athletics_logo.png" alt="Logo" className={styles.logo} />
         <nav>
           <ul className={styles.nav_ul}>
             <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/">Home</Link></li>
