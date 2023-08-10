@@ -1,5 +1,4 @@
 .container {
-  min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
@@ -156,10 +155,6 @@
   margin: 0 auto;
 }
 
-.container{
-  max-width: 1170px;
-  margin: auto;
-}
 
 /* Services section styles */
 .services {
@@ -369,4 +364,37 @@ object-fit: fill;
   max-width: 800px;
   text-align: center;
   color: black; /* Text color set to black */
+}
+
+.flex_container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-left: 5%;
+  text-align: center;
+
+}
+.flex_container > div {
+  background-color: #f1f1f1;
+  width: 300px;
+  margin: 10px;
+  line-height: 25px;
+  font-size: 12px;
+  
+}
+
+.profile_image {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.box {
+  text-align: center;
+
+}
+
+.box h3 {
+  text-align: center;
 }

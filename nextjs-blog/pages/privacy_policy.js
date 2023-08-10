@@ -40,7 +40,7 @@ const PrivacyPolicyPage = () => {
         </style>
       </Head> 
       <header>
-        <img src="/Apex_Athletics_logo.png" alt="Logo" className={styles.logo} />
+        <img src="/images/Apex_Athletics_logo.png" alt="Logo" className={styles.logo} />
         <nav>
           <ul className={styles.nav_ul}>
             <li className={styles.nav_ul_li}><Link className={styles.nav_ul_li_a} href="/">Home</Link></li>
