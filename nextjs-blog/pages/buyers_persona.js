@@ -20,8 +20,6 @@ const BuyersPersona = () => {
             body {
               background-color: #1197A9;
             }
-
-            
           `}
         </style>
       </Head>
