@@ -36,7 +36,6 @@ const Home = () => {
           </ul>
         </nav>
       </header>
-
       <div className={styles.hero}>
         <div className={styles.hero_content}>
           <h1 className={styles.hero_heading}>Welcome to Apex Athletics Gym</h1>
