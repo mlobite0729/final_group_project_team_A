@@ -100,7 +100,7 @@ const Home = () => {
       <div className={styles.contact}>
         <div className={styles.container}>
           <h2>Contact Us</h2>
-          <p>Ready to take the next step in your fitness journey? Contact us today to schedule a consultation or ask any questions you may have.</p>
+          <p>Ready to take the next step in your fitness journey? Contact us today to schedule a consultation or ask any questions you have.</p>
           <a href="https://form.jotform.com/232217953393157"><button className={styles.contact_button}>Subscribe</button></a>
         </div>
       </div>
